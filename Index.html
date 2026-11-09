@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+
+
+    <script>
+        // Number 1
+        let grocery= ["rice", "beans"];
+        grocery.push("yam","garri");
+        grocery.unshift("salt");
+        let removeditem=grocery.pop();
+        console.log("Grocery list", grocery)
+        console.log("Removed", removeditem)
+
+        
+
+
+
+        //   Number 2
+        let students=["David","Aisha","David","Tolu","David",]
+        let position= students.indexOf("David")
+        console.log("First index of david",position)
+
+        console.log("Last index of david",students.lastIndexOf("David"))
+        console.log("is Aisha included",students.includes("Aisha"))
+
+
+        //    Number 3
+        let nums=[100,200,300,400,500,600];
+        nums.slice(1, 4);
+        console.log(nums)
+
+
+            // Number 4
+        let towns= ["Ikeja","Lekki","Ibadan","Oshogbo","Abuja"];
+        towns.splice(2, 2)
+        console.log(towns)
+        towns.splice(2,0, "Ogbomoso","Ilorin")
+         console.log(towns)
+
+        // Number 5
+        let cart=["Phone","Charger","Powerbank","Cable"];
+        cart.indexOf("Powerbank")
+        console.log(cart.indexOf("Powerbank"))
+        cart.splice(2,1)
+        console.log(cart)
+
+        // Number 6
+        let words=["Javascript","is","very","easy"];
+        console.log(words.toString( ))
+        console.log(words.join(' '))
+
+        // Number 7
+        let invited=["Sola","Tunde","Bisi"];
+        let newGuest=["Kunle"];
+        console.log(invited.includes("Kunle"))
+        invited.push("Kunle")
+        console.log(invited)
+
+        //  Number 8
+         let products=[
+             {id:1, name:"Shoe", price:5000},
+             {id:2, name:"Bag", price:3000},
+             {id:3, name:"Cap", price:1500}
+         ];
+        let product= products.find(item => item.id === 2);
+        console.log(product);
+
+        // Number 9
+        const a= ["a","b","c"];
+        const b=["d","e"];
+        a.pop("c");
+        const sentences = a.concat(b);
+        console.log(sentences)
+
+        // Number 10
+        const sentence =["I","am","learing","javascript"];
+        sentence.indexOf("learing")
+        console.log(sentence.indexOf())
+        sentence.splice(2,1, "learning");
+        sentence.push("today");
+        console.log(sentence.join(" "))
+
+
+    </script>
+    
+</body>
+</html>
